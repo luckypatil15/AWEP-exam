@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script>
+    
+    function mess(){
+        let a = document.querySelector('#email').value
+        console.log(a)
+        let b = document.querySelector('#uname').value
+        console.log(b)
+        let c = document.querySelector('#pass').value
+        console.log(c)
+        if(a == "" ||  b =="" || c ==""){
+            window.alert("You cannot leave empty fields in username password and email id")
+            
+        }
+        else{
+          window.alert("You are good to go")
+            
+        }
+    }
+</script>
+</head>
+<body>
+    <div style="background: url(https://picsum.photos/2000/1000?grayscale);"> 
+     <nav class="navbar navbar-expand navbar-warning bg-light sticky-top" style="height: 65px;">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Login</a>
+            <a class="nav-item nav-link" href="#">Signup</a>
+            <a class="nav-item nav-link" href="#">About us</a>
+            <a class="nav-item nav-link" href="#">our Vision</a>
+            <a class="nav-item nav-link" href="#">Logout</a>
+
+            <a class="nav-item nav-link active"  onmouseover="message()" href="question_1.html">Question_1</a>
+
+        </div>
+    </nav>
+    <div class="row mt-2 d-flex justify-content-center align-content-center">
+
+    </div>
+    <div class="row d-flex mt-2  justify-content-center align-items-center">
+        <div class="col-sm-6 mt-5 mb-4 flex-column shadow bg-light d-flex justify-content-center align-items-center shadow-bottom" style="border:solid black;">
+           <div  style="border-bottom:solid 1px gray;">
+            <div class="row mt-3 d-flex justify-content-start ">
+                <h5 class="display-6">Email :</h2>
+            </div>
+            <div class="row d-flex mb-3 justify-content-center align-content-center">
+                <input class="form-control was-validated" type="email" name="email" id="email" required>
+            </div> 
+            </div>
+            <div style="border-bottom:solid 1px gray;">
+                <div class="row mt-3 d-flex justify-content-start ">
+                    <h5 class="display-6">Username :</h2>
+                </div>
+                <div class="row d-flex mb-3 justify-content-center align-content-center">
+                    <input class="form-control was-validated" type="email" name="Username" id="uname" required>
+                </div> 
+            </div>
+            <div style="border-bottom:solid 1px gray;">
+                <div class="row mt-3 d-flex justify-content-start ">
+                    <h5 class="display-6">Password :</h2>
+                </div>
+                <div class="row d-flex mb-3 justify-content-center align-content-center">
+                    <input class="form-control was-validated" type="password" name="Password" id="pass" required>
+                </div>
+            </div>
+            <div class="row mt-4 mb-3 d-flex">
+                <div class="btn-group" data-toggle="buttons">
+                    <div class="row d-flex justify-content-center">
+                        <label class="btn btn-primary active">
+                         <input type="checkbox" name="keeepme" checked autocomplete="off"> Keep me signed in
+                        </label>
+                    </div>
+                </div>
+                
+                    <button type="button" onclick="mess()" name="Login" id="login" class="btn btn-outline-primary btn-success btn-lg btn-block" >Login </button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+ 
+</body>
+</html>
+<!--INSTRUCTIONS :  
+●	Create a project name/folder as your ROLLID. 
+●	File naming convention – For HTML – 1.html,  For CSS - 1.css,  For JavaScript – 1.js and 2.html, 2.css and 2.js
+●	For User interface layout use CSS Flexbox or Bootstrap. 
+●	For DOM operation use Native JavaScript or jQuery. 
+1.	Create a Simple Responsive Layout with following feature -  
+a.	A Navbar Sticky at the Top (height of navbar is 65px).
+b.	Centre aligned Multiple Body Blocks (height - 200px) for the WebView.
+c.	Responsive Body Blocks (height - 200px) with 100% width in Mobile View
+d.	Centre Aligned Sample Text content in Each Block. 
+
+2.	Create a Simple Form with  Username, Password and Email Field and perform following DOM Operations 
+a.	Empty validation for all the fields.
+b.	Read the value of the above fields and display it in the page, below the forms. 
+c.	Clear the fields once the user submit the form.
+
+-->
